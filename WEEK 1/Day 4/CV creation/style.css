@@ -1,0 +1,23 @@
+ body {
+    background-color: white;
+ }
+
+ .profile {
+    position:absolute;
+    top: 0%;
+    width: 12%;
+    height:160%;
+    background-color: antiquewhite;
+ }
+
+ .pfp {
+    border-radius: 90%;
+    max-width:7px;
+ }
+
+ .overall {
+    width: 90%;
+    text-align: center;
+     direction: inherit;
+    right: 10%;
+ }

@@ -1,0 +1,52 @@
+ 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+ 
+
+ 
+ul {
+  position:fixed;
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  top: 0%;
+  left:0%;
+}
+
+li { 
+     float:left;
+}
+ 
+
+li a {
+   display: flex;
+  color: white;
+  text-align: center;
+  padding: 16px 6px;
+  justify-content:flex-end;
+   
+   
+ 
+   
+}
+
+ 
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:green; 
+}
+ 
