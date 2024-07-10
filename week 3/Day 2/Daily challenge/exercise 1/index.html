@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS exercise 1</title> 
+    
+</head>
+
+<body>
+ <p>Exercise 1</p>
+
+
+
+ <script src="main.js">
+    
+    const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+ 
+fruits.shift();
+
+ 
+fruits.sort();
+
+ 
+fruits.push("Kiwi");
+
+ 
+const valueToRemove = fruits.valueOf("Apples");
+if (valueToRemove !== -1) {
+    fruits.splice(valueToRemove, 1);
+}
+
+ 
+fruits.reverse();
+
+console.log(fruits);
+
+ </script>
+    
+
+    
+</body>
+</html>
