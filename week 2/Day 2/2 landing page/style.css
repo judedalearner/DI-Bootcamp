@@ -1,0 +1,82 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(11, 71, 65);
+}
+
+.header {
+    background-color: rgb(11, 71, 65);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(32, 148, 202);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    padding-right: 20px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 30px;
+    color:rgb(255, 255, 255);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.box {
+    padding: 5px;
+}
+
+.flex1 {
+    margin-left: 460px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=url] {
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#employee {
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    padding-right:420px;
+}
+
+#employees {
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    padding-right:300px;
+}
+
+label {
+    font-size: 12px;
+}
+
+dl, dt, dd {
+    font-size: 12px;
+}

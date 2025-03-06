@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise xp</title>
+</head>
+<body>
+    <script>
+    //exercise 1 (part 1)
+
+    function infoAboutMe() {
+  const myName = "Jude";
+  const myAge = 19; 
+  const myHobbies = ["reading books", "gaming", " coding"];
+
+  console.log(`Hi there! I'm ${myName}. I'm ${myAge} year old (in AI years), and my hobbies include ${myHobbies.join(", ")}.`);
+}
+
+ 
+infoAboutMe();
+
+ //exercise 1 (part 2)
+
+ function infoAboutPerson(personName, personAge, personFavoriteColor) {
+  console.log(`Your name is ${personName}, you are ${personAge} years old, and your favorite color is ${personFavoriteColor}.`);
+}
+
+infoAboutPerson("David", 45, "blue");
+infoAboutPerson("Josh", 12, "yellow");
+
+
+  // Exercise 2
+ function calculateTip() {
+   
+  const billAmount = parseFloat(prompt("Enter the bill amount:"));
+
+   
+  let tipPercentage;
+  if (billAmount < 50) { tipPercentage = 0.2; }  
+    else if 
+    
+    (billAmount >= 50 && billAmount <= 200) { tipPercentage = 0.15; }
+    
+    else
+ { tipPercentage =  0.1;  }
+
+  const tipAmount = billAmount * tipPercentage;
+  const totalBill = billAmount + tipAmount;
+
+ 
+  console.log(`Bill amount: $${billAmount.toFixed(2)}`);
+  console.log(`Tip amount: $${tipAmount.toFixed(2)}`);
+  console.log(`Total bill (including tip): $${totalBill.toFixed(2)}`);
+}
+
+ 
+calculateTip();
+
+ //Exercise 3
+
+ function isDivisible() {
+  let sum = 0;
+
+  for (let number = 0; number <= 500; number++) {
+    if (number % 23 === 0) {
+      console.log(number);
+      sum += number;
+    }
+  }
+
+  console.log(`Sum of numbers divisible by 23: ${sum}`);
+}
+
+ 
+isDivisible();
+
+
+ //Exercise 4
+
+ const stock = {
+  "banana": 6,
+  "apple": 0,
+  "pear": 12,
+  "orange": 32,
+  "blueberry": 1
+};
+
+const prices = {
+  "banana": 4,
+  "apple": 2,
+  "pear": 1,
+  "orange": 1.5,
+  "blueberry": 10
+};
+
+const shoppingList = ["banana", "orange", "apple"];
+
+function myBill() {
+  let total = 0;
+
+  for (const item of shoppingList) {
+    if (item in stock && stock[item] > 0) {
+      total += prices[item];
+      stock[item]--; 
+    }
+  }
+
+  return total;
+}
+
+const totalPrice = myBill();
+console.log(`Total price of your shopping list: $${totalPrice.toFixed(2)}`);
+
+
+  //Exercise 5
+
+  function changeEnough(itemPrice, amountOfChange) {
+  
+  const quarterValue = 0.25;
+  const dimeValue = 0.10;
+  const nickelValue = 0.05;
+  const pennyValue = 0.01;
+
+ 
+  const totalChange =
+    amountOfChange[0] * quarterValue +
+    amountOfChange[1] * dimeValue +
+    amountOfChange[2] * nickelValue +
+    amountOfChange[3] * pennyValue;
+
+  
+  return totalChange >= itemPrice;
+}
+
+    </script>
+</body>
+</html>

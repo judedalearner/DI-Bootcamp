@@ -1,0 +1,81 @@
+.login{
+    text-align: center;
+     
+    
+}
+
+
+form {
+    display: inline-block;
+    block-size: 80%;
+     
+}
+
+  input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 1px solid #ccc;
+    border-radius: .1875rem;
+    box-sizing: border-box;
+    display: block;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+    padding: .275rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+       -moz-appearance: checkbox;
+            appearance: checkbox;
+    display: inline-block;
+    width: auto;
+  }
+  
+  input[type="password"] {
+    margin-bottom: .5rem;
+  }
+  
+  input[type="submit"] {
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  
+  label {
+    color: blueviolet;
+    font-size: .875rem;
+  }
+
+  body{
+    background-color: beige;
+    width: 30%;
+    height: 100%;
+     
+
+  }
+
+  .registration{
+    top:0%;
+    position: absolute;
+    right:0%;
+    background-color: blueviolet;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+     
+  }
+ 
+
+  .logos{
+    display:flex;
+    margin: 10px;
+    justify-content: space-between;
+
+  }
+ 

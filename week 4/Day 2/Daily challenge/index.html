@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily challenge star word</title>
+ </head>
+ <body>
+   <script>
+    
+    function frameWords(words) {
+  const wordList = words.split(',').map(word => word.trim());
+  const longestWordLength = Math.max(...wordList.map(word => word.length));
+  const horizontalBorder = '*'.repeat(longestWordLength + 4);
+
+  console.log(horizontalBorder);
+  wordList.forEach(word => {
+    const padding = ' '.repeat(longestWordLength - word.length);
+    console.log(`* ${word}${padding} *`);
+  });
+  console.log(horizontalBorder);
+}
+
+const userInput = prompt("Enter several words separated by commas:");
+frameWords(userInput);
+
+   </script> 
+ </body>
+ </html>
